@@ -200,11 +200,23 @@ h1{
 .error-container{
     display:none;
     font-size: 1.5rem;
-    margin-top: 200px;
+    margin-top: 120px;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 .error-container.active{
     display: flex;
+    flex-direction: column-reverse;
+}
+
+@media(max-width:400px){
+    .parameter-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .parameter{
+        min-width:150;
+        object-fit: contain;
+    }
 }
